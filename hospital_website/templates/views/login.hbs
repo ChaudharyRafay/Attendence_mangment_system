@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/login.css">
+    <link rel="stylesheet" href="js/loginform.js">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    <title>Registration Form</title>
+     
+</head>
+  <body>
+
+    <div class='line'>
+    <h2 id='err'>{{err}}</h2>
+  </div>
+  
+    <div class="wrapper">
+      <div class="title">Login Form</div>
+      <form action="/login" method="POST"  name="myform" >
+        <div class="field">
+          <input type="text" name="email" required>
+          <label>Email Address</label>
+          
+        </div>
+        <div class="field">
+          <input type="password" name="password"  required>
+          <label>Password</label>
+          <div class="error">
+               <p class="formerror">{{ stuff }}</p>
+          </div>
+          
+        </div>
+        <div class="content">
+          <div class="checkbox">
+            <input type="checkbox" id="remember-me">
+            <label for="remember-me">Remember me</label>
+          </div>
+          <div class="pass-link"><a href="/forgetpassword">Forgot password?</a></div>
+        </div>
+        <div class="field">
+          <input type="submit" value="Login">
+        </div>
+        <div class="signup-link">Not a member? <a href="/register">Signup now</a></div>
+      </form>
+    </div>
+    </form>
+<script>
+  setTimeout(function () {
+    var msg=document.getElementById("err");
+    msg.parentNode.removeChild(msg);
+},3000);
+</script>
+  </body>
+</html>
+
