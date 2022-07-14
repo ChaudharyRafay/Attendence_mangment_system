@@ -106,7 +106,7 @@ router.post("/login", async(req, res) => {
         if (!useremail.verified) {
             return res.render("login", { stuff: "Email Verification Incomplete" });
         }
-        res.status(200).render("index");
+        res.status(200).render("index", { err: "Login Successfully!!" });
     } catch (error) {
         res.status(400).render("login", { stuff: "Invalid Email!!" });
     }

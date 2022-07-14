@@ -14,9 +14,6 @@ const bodyParser = require("body-parser");
 const port = process.env.PORT || 8000;
 const path = require("path");
 
-
-//......................forget password functionality.............................
-
 const static_path = path.join(__dirname, "../public");
 const template_path = path.join(__dirname, "../templates/views");
 const template_path1 = path.join(__dirname, "../templates/views/");
