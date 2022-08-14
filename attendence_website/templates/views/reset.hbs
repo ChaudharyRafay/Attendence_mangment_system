@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="shortcut icon" href="/image/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="/css/reset.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    <title>Reset Page</title>
+  
+</head>
+
+<body>
+  
+  <div class="container">
+    <div class="title">Reset Password   </div>
+    <div class="content">
+      <form action="" method="POST">
+        <div class="user-details">
+          <div class="input-box">
+            <input type="hidden" name="id" value="payload.id " /> 
+        <input type="hidden" name="token" value="req.params.token"/>
+            <span class="details">Password</span>
+            <input type="text" placeholder="Enter your password" name="password" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Confirm Password</span>
+            <input type="text" placeholder="Confirm your password" name="confirmpassword" required>
+          </div>
+          <div class='line'>
+    <h2 id='err'>{{err}}</h2>
+  </div>
+        </div>
+        
+        <div class="button">
+          <input type="submit" value="Submit" >
+        </div>
+      </form>
+    </div>
+  </div>
+</body>
+</html>

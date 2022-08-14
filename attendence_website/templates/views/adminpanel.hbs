@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+{{>headerlinks}}
+<style>
+  .container{
+    margin-top: 25px;
+  }
+    body{
+    background: url("../image/uni3\ \(1\).jpg");
+    height: 100vh;
+    width: 100vw;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  }
+  .card{
+    background-color: #2b6777;
+  }
+  .card-footer{
+    height: 3.5rem;
+    background-color: #2b6777;
+  }
+  .card-footer:hover{
+    cursor: pointer;
+    background-color: #52ab98;
+  }
+  .btn{
+    cursor: pointer;
+    background-color: none;
+    border: none;
+  }
+  .btn:focus{
+    border: none;
+    box-shadow: none;
+  }
+</style>
+<body>
+  {{>navbaradmin}}
+<div class="container  bg-light d-flex flex-wrap align-items-center justify-content-center " style="max-width: 75vw ;">
+
+  <div class="card text-white " style="max-width: 24rem;">
+  <div class="card-header d-flex align-items-center justify-content-center">Total Students</div>
+  <div class="card-body d-flex align-items-center justify-content-center ">
+    <h1 class="card-title ">{{total}}</h1>
+  </div>
+  </a>
+  <div class="card-footer  ">
+     <a href="/viewrecord" class="btn text-light" style="width: 24rem;"><button type="button" class="btn text-light btn-rounded" >View Attendence Record</button></a>
+  </div>
+  </div>
+
+
+   <div class="card text-white " style="max-width: 24rem;">
+  <div class="card-header d-flex align-items-center justify-content-center">Leave Approval</div>
+  <div class="card-body d-flex align-items-center justify-content-center ">
+    <h1 class="card-title ">{{leave}}</h1>
+  </div>
+  <div class="card-footer  ">
+     <a href="/pendingleaves" class="btn text-light" style="width: 24rem;"><button type="button" class="btn text-light btn-rounded" >View Pending Leaves</button></a>
+  </div>
+  </div>
+
+
+
+   <div class="card text-white " style="max-width: 24rem;">
+  <div class="card-header d-flex align-items-center justify-content-center">Report</div>
+  <div class="card-body d-flex align-items-center justify-content-center ">
+    <h4 class="card-title ">Specific Student Report</h4>
+  </div>
+  <div class="card-footer  ">
+     <a href="#" class="btn text-light" style="width: 24rem;"><button type="button" class="btn text-light btn-rounded" >Generate Report</button></a>
+  </div>
+  </div>
+
+
+
+   <div class="card text-white " style="max-width: 24rem;">
+  <div class="card-header d-flex align-items-center justify-content-center">Grant Report</div>
+  <div class="card-body d-flex align-items-center justify-content-center ">
+    <h4 class="card-title ">One Grant Report</h4>
+   
+  </div>
+  
+  <div class="card-footer  ">
+     <a href="#" class="btn text-light" style="width: 24rem;"><button type="button" class="btn btn-rounded text-light" >Generate Report</button></a>
+  </div>
+  </div>
+  </div>
+{{>bootstrapjs}}
+
+</body>
+</html>

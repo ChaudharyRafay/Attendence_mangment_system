@@ -1,0 +1,26 @@
+.container{
+    /* border: 2px solid red; */
+    margin-top: 13px;
+margin-bottom: 10px;
+    padding: 20px 30px;
+    border-radius: 8px;
+    box-shadow: 0 6px 15px rgb(0 0 0 / 0.2);
+}
+.card{
+    border: 2pc solid red;
+    margin: 25px 25px;
+    
+}
+/* .btn{
+    border-top: black;
+    width: 24rem;
+} */
+.card-footer{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* .btn{
+    width: 24rem;
+} */

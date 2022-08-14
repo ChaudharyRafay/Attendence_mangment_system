@@ -1,0 +1,35 @@
+:root{
+    --main-bg-color:#2b6777;
+}
+html,
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background: url("../image/uni3\ \(1\).jpg");
+    height: 100%;
+    width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.form-gap {
+    padding-top: 70px;
+}
+.panel{
+    border-radius: 18px;
+    box-shadow: 0 6px 15px rgb(0 0 0 / 0.2);
+}
+i{
+    color: var(--main-bg-color);
+}
+.btn{
+    background-color: var(--main-bg-color);
+}
+.btn:hover{
+    background-color: #338488;
+    /* background: linear-gradient(135deg, #4e9599); */
+}

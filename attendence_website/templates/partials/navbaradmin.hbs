@@ -1,0 +1,46 @@
+<style>
+  nav{
+    background-color: #2b6777;
+  }
+  nav a{
+    color: #f2f2f2;
+  }
+  nav a:hover{
+    color: #c8d8e4;
+  }
+  .btn:hover{
+    color: #c8d8e4;
+  }
+</style>
+   <nav class="navbar navbar-expand-lg">
+  <a class="navbar-brand" href="#">Arid Unversity</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+        <a class="nav-link" href="/adminpanel">Dashboard <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="/viewrecord">View All Attendecne <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="pendingleaves">Leave Approval</a>
+      </li>
+       <li class="nav-item">
+        <a class="nav-link" href="#">Student Report</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Grant Report</a>
+      </li>
+
+    </ul>
+    <form class="form-inline my-2 my-lg-0" action="/search" method="post">
+      <input class="form-control mr-sm-2" type="search" name="search" placeholder="Search Record" aria-label="Search">
+      <button class="btn btn-outline my-2 my-sm-0 text-light" type="submit" style="background-color: #52ab98;">Search </button>
+    </form>
+    
+  </div>
+</nav>

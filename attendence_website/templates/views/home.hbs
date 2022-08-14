@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+{{>headerlinks}}
+<style>
+  .container{
+    margin-top: 35px;
+  }
+  body{
+    background: url("../image/uni3\ \(1\).jpg");
+    height: 100vh;
+    width: 100vw;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  }
+  .card{
+    background-color: #2b6777;
+  }
+</style>
+<body>
+  {{>navbar}}
+{{!-- {{>alert}} --}}
+<div class="container bg-light d-flex flex-wrap align-items-center justify-content-center">
+
+  <div class="card text-white" style="width: 24rem;">
+  <div class="card-header d-flex align-items-center justify-content-center" style="height: 4rem;">Number of Present</div>
+  <div class="card-body d-flex align-items-center justify-content-center " style="height: 7rem;">
+    <h1 class="card-title ">{{p}}</h1>
+  </div>
+  </div>
+
+   <div class="card text-white" style="width: 24rem;">
+  <div class="card-header d-flex align-items-center justify-content-center "style="height: 4rem;">Number of Absent</div>
+  <div class="card-body d-flex align-items-center justify-content-center "style="height: 7rem;">
+    <h1 class="card-title ">{{a}}</h1>
+  </div>
+  </div>
+
+
+
+   <div class="card text-white" style="width: 24rem;">
+  <div class="card-header d-flex align-items-center justify-content-center"style="height: 4rem;">Pending Leaves</div>
+  <div class="card-body d-flex align-items-center justify-content-center "style="height: 7rem;">
+    <h1 class="card-title ">{{l}}</h1>
+  </div>
+  </div>
+
+
+
+   <div class="card text-white" style="width: 24rem;">
+  <div class="card-header d-flex align-items-center justify-content-center"style="height: 4rem;">Total Attendence Marked </div>
+  <div class="card-body d-flex align-items-center justify-content-center "style="height: 7rem;">
+    <h1 class="card-title ">{{t}}</h1>
+   
+  </div>
+  </div>
+  </div>
+{{>bootstrapjs}}
+{{>timeout}}
+
+</body>
+</html>

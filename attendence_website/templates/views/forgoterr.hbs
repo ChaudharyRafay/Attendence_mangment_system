@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <link rel="shortcut icon" href="/image/logo.png" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    <title>Forget Password</title>
+</head>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins',sans-serif;
+}
+:root{
+    --main-bg-color:#2b6777;
+}
+body{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  perspective: 500px;
+  background: url("../image/uni3\ \(1\).jpg");
+    height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.cont{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(203 211 209);
+  width: 35vw;
+  height: 45vh;
+   padding: 20px 30px;
+    border-radius: 8px;
+    box-shadow: 0 6px 15px rgb(0 0 0 / 0.2);
+}
+.line{
+    margin: -32px 0px 40px 0px;
+  }
+  #err {
+    animation: 4s anim-fromtop linear infinite;
+    font-size: 20px;
+    color: rgb(180, 17, 17);
+  }
+  @keyframes anim-fromtop {
+    0% { opacity: 0; transform: translateY(-100%);}
+    25% { opacity: 1; transform: translateY(0%);}
+    50% {
+    }
+    100% {
+    }
+  }
+  .button {
+  background-color: var(--main-bg-color); /* Green */
+  border: none;
+  border-radius: 4px;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+a{
+  display: block;
+  text-decoration: none;
+  color: white;
+}
+.button2:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+</style>
+<body>
+  <div class="cont">
+  <div class='line'>
+    <h2 id='err'>{{err}}</h2>
+  </div>
+  <a href="https://mail.google.com/mail/u/0/?pli=1#inbox">
+    <div class="button button2">Go to Gmail</div> 
+    </a>  
+    </div>
+</body>
+</html>
+
+
+
